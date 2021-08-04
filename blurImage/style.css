@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif; */
+
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    display:flex;
+    margin:0;
+    flex-direction:column;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+
+.bg {
+    background:url('https://static.displate.com/280x392/displate/2020-12-07/a40d8aafd46dc405df46cbe8dc1a9e50_129a1bda3e28a34591d0649980cc090d.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:-30px;
+    left:-30px;
+    width:calc(100vw + 60px);
+    height:calc(100vh + 60px);
+    z-index:-1;
+    filter:blur(0px);
+}
+
+
+
+.loading-text{
+    font-size:50px;
+    color:white;
+}
+
+
