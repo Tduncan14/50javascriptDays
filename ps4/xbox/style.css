@@ -8,6 +8,10 @@ font-family: 'Roboto', sans-serif; */
 :root {
     --left-bg:rgba(87,94,236,0.7);
     --right-bg:rgba(43,43,43,0.8);
+    --left-btn-hover:rgba(87,84,236,1);
+    --right-btn-hover:rgba(28,122,28,1);
+    --hover-width:75%;
+    --other-width:25%;
 }
 
 
@@ -44,7 +48,7 @@ body {
 .split.left{
     left:0;
     background:url('ps.jpg');
-    background-repeat:none;
+    background-repeat:no-repeat;
     background-size:cover;
 }
 
@@ -85,4 +89,53 @@ h1{
     top:20%;
     transform:translateX(-50%);
     white-space: nowrap;
+}
+
+
+
+.btn{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    left:50%;
+    top:40%;
+    transform:translateX(-50%);
+    text-decoration:none;
+    color:white;
+    border:white solid 0.2rem;
+    font-size:1rem;
+    width:15rem;
+    padding:1.5rem;
+    font-weight:bold;
+    text-transform:uppercase;
+
+
+}
+
+
+.split.left .btn:hover{
+    background-color:var(--left-btn-hover);
+    border-color:var(--left-btn-hover);
+}
+
+.split.right .btn:hover{
+    background-color:var(--right-btn-hover);
+    border-color:var(--right-btn-hover);
+}
+
+.hover-left .left{
+    width:75%;
+}
+
+.hover-right .right{
+    width:75%;
+}
+
+.hover-left .right{
+    width:25%;
+}
+
+.hover-right .left{
+    width:25%;
 }
