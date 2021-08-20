@@ -139,3 +139,23 @@ h1{
 .hover-right .left{
     width:25%;
 }
+
+.split.right, .split-left, .split.right::before, .split.left::before{
+
+    transition:all ease-in-out 1000ms;
+
+}
+
+
+@media(max-width:800px){
+
+    h1{
+        font-size:2rem;
+        top:30%;
+    }
+
+    .btn{
+        width:12rem;
+        padding:1.2rem;
+    }
+}
