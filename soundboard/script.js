@@ -20,6 +20,8 @@ sounds.forEach( sound => {
 
     btn.addEventListener('click',() => {
 
+        stopSongs()
+
         document.getElementById(sound).play()
 
 
@@ -27,3 +29,19 @@ sounds.forEach( sound => {
 
 
 })
+
+
+function stopSongs(){
+
+    sounds.forEach( sound => {
+
+        const sound = document.getElementById(sound);
+
+        song.pause()
+        song.currentTime = 0;
+
+
+    })
+
+
+}
