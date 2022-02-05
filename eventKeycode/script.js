@@ -14,7 +14,7 @@ window.addEventListener('keydown', (e) => {
 
     <div class="key">
     a
-    <small>${e.key}</small>
+    <small>${e.key === ' ' ? 'space ' : e.key}</small>
  </div>
 
 
